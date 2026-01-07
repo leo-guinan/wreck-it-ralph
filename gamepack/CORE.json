@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "gameName": "string",
+    "skin": "kanban|rpg|sports",
+    "version": "0.1"
+  },
+  "turn": {
+    "phases": ["observe", "choose", "act", "verify", "log", "bank"],
+    "oneQuestPerTurn": true
+  },
+  "rules": {
+    "invariants": ["..."],
+    "antiPatterns": ["..."],
+    "diffBudgetLines": 300
+  },
+  "referee": {
+    "requiredCommands": ["npm run typecheck", "npm test"],
+    "evidence": {
+      "uiProof": { "requiredWhen": "quest.uiProof==true", "artifactPath": "tmp/ui-proof.png" }
+    },
+    "banking": { "commitOnlyIfAllPass": true }
+  },
+  "scoring": {
+    "base": { "questComplete": 10 },
+    "bonuses": [{ "name": "smallDiff", "points": 3, "when": "diffLines<=150" }],
+    "penalties": [{ "name": "refereeFail", "points": -5, "when": "refereePass==false" }]
+  },
+  "quests": [
+    {
+      "id": "Q-001",
+      "title": "…",
+      "priority": 1,
+      "passes": false,
+      "acceptanceCriteria": ["…"],
+      "uiProof": false,
+      "notes": ""
+    }
+  ]
+}
