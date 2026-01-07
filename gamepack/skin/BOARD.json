@@ -1,0 +1,19 @@
+{
+  "wipLimit": 1,
+  "columns": ["Backlog", "Ready", "Doing", "Done"],
+  "cards": [
+    {
+      "id": "CARD-001",
+      "title": "Add login form UI skeleton",
+      "column": "Ready",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "Email + password fields render",
+        "Client-side email format validation",
+        "Inline error on invalid email"
+      ],
+      "proof": { "typecheck": true, "tests": true, "uiProof": true },
+      "notes": ""
+    }
+  ]
+}
