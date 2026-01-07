@@ -1,0 +1,78 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "title": "Define turn phases and banking conditions",
+      "priority": 1,
+      "passes": false,
+      "acceptanceCriteria": [
+        "GAME.md defines turn phases",
+        "Referee gate is explicit",
+        "Win condition is explicit"
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "title": "Define referee commands and required evidence artifacts",
+      "priority": 2,
+      "passes": false,
+      "acceptanceCriteria": [
+        "REFEREE.md lists required commands (typecheck/tests/etc)",
+        "Evidence artifacts defined for UI work (screenshot or equivalent)",
+        "Banking rules include pass/fail behavior"
+      ]
+    },
+    {
+      "id": "REQ-003",
+      "title": "Define quest sizing rules and anti-patterns",
+      "priority": 3,
+      "passes": false,
+      "acceptanceCriteria": [
+        "RULES.md includes quest sizing guidance",
+        "RULES.md includes anti-patterns (no scope creep, no future-proofing)"
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "title": "Define scoring system",
+      "priority": 4,
+      "passes": false,
+      "acceptanceCriteria": [
+        "SCORING.md defines points/penalties",
+        "Scoring aligns with rules (no reward for scope creep)"
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "title": "Define memory model",
+      "priority": 5,
+      "passes": false,
+      "acceptanceCriteria": [
+        "ROLES.md clarifies what persists and why",
+        "MEMORY.md structure is provided (patterns vs turn logs)",
+        "No hidden memory beyond git + gamepack files"
+      ]
+    },
+    {
+      "id": "REQ-006",
+      "title": "Create starter quest templates for players",
+      "priority": 6,
+      "passes": false,
+      "acceptanceCriteria": [
+        "Provide QUEST templates (feature/refactor/bug)",
+        "Acceptance criteria patterns included"
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "title": "Write a playtest and prove it runs",
+      "priority": 7,
+      "passes": false,
+      "acceptanceCriteria": [
+        "PLAYTEST.md includes exact steps to run a 3-turn demo",
+        "Includes pass/fail conditions",
+        "Includes example outputs or artifacts"
+      ]
+    }
+  ]
+}
