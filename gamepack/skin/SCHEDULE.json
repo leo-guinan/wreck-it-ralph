@@ -1,0 +1,23 @@
+{
+  "seasonName": "Refactor League",
+  "matches": [
+    {
+      "id": "MATCH-001",
+      "title": "Reduce dashboard component size",
+      "week": 1,
+      "priority": 1,
+      "winConditions": [
+        "No component > 200 lines in app/dashboard",
+        "typecheck passes",
+        "tests pass"
+      ],
+      "replayEvidence": { "typecheck": true, "tests": true },
+      "notes": ""
+    }
+  ],
+  "standingsRules": {
+    "win": 3,
+    "loss": -2,
+    "streakBonus": 2
+  }
+}
