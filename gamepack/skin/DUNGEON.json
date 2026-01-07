@@ -1,0 +1,22 @@
+{
+  "dungeonName": "Auth Catacombs",
+  "rooms": [
+    {
+      "id": "ROOM-01",
+      "name": "The Login Gate",
+      "difficulty": 1,
+      "acceptanceCriteria": [
+        "Login form renders",
+        "Email validation implemented",
+        "Error shown on invalid email"
+      ],
+      "monsters": ["typecheck", "tests", "uiProof"],
+      "notes": ""
+    }
+  ],
+  "monsterRules": {
+    "typecheck": "npm run typecheck",
+    "tests": "npm test",
+    "uiProof": "produce tmp/ui-proof.png"
+  }
+}
