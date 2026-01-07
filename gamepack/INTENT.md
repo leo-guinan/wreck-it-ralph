@@ -11,11 +11,11 @@
 - [ ] normal (tests required)
 - [ ] fast (typecheck only)
 
-## Your preferred mental model
-- [ ] Kanban quests
-- [ ] RPG dungeon rooms
-- [ ] Sports season (sprints as matches)
-- [ ] Speedrun (timeboxed turns)
+## Preferred skin
+- [ ] Kanban
+- [ ] RPG Dungeon
+- [ ] Sports Season
+- [ ] Surprise me
 
 ## What evidence do you trust?
 - [ ] tests
@@ -26,3 +26,4 @@
 
 ## What should never happen?
 (list anti-goals)
+
